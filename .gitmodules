@@ -1,3 +1,6 @@
 [submodule "ubpe-native"]
 	path = ubpe-native
 	url = https://github.com/Scurrra/ubpe-native
+[submodule "ubpe-cython"]
+	path = ubpe-cython
+	url = https://github.com/Scurrra/ubpe-cython
