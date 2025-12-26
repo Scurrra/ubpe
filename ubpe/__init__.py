@@ -1,4 +1,4 @@
-__version__ = "0.2.0-rc2"
+__version__ = "0.2.0-rc3"
 
 
 try:
@@ -10,7 +10,7 @@ else:
 
 
 try:
-    if _has_ubpe_cython:
+    if not _has_ubpe_cython:
         from ubpe_native import UBPE, UBPEClassic  # type: ignore
     else:
         raise ImportError()
