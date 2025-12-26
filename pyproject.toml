@@ -1,6 +1,6 @@
 [project]
 name = "ubpe"
-version = "0.2.0-rc1"
+version = "0.2.0-rc2"
 description = "UBPE Tokenizer"
 authors = [{ name = "Scurrra (Ilja Baroŭski)", email = "iscurrra@gmail.com" }]
 license = { text = "MIT" }

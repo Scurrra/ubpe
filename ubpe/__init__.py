@@ -1,8 +1,8 @@
-__version__ = "0.2.0-rc1"
+__version__ = "0.2.0-rc2"
 
 
 try:
-    from ubpe_cyton import UBPE, UBPEClassic  # type: ignore
+    from ubpe_cython import UBPE, UBPEClassic  # type: ignore
 except ImportError:
     _has_ubpe_cython = False
 else:
@@ -19,6 +19,8 @@ except ImportError:
 else:
     _has_ubpe_native = True
 
+print(f"Has ubpe-cython :: {_has_ubpe_cython}")
+print(f"Has ubpe-native :: {_has_ubpe_native}")
 
 if not _has_ubpe_cython and not _has_ubpe_native:
     raise Exception(
