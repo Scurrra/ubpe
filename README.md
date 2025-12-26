@@ -12,16 +12,23 @@ The package provides Universal Byte-Pair Encoding tokenizers:
   
 ## Installation
 
-I am planning to deliver different implementations for the algorithm, so the package is divided into general import package (this one), and implementations (for now, only Python native). To install use:
+I am planning to deliver different implementations for the algorithm, so the package is divided into general import package (this one), and implementations (for now, Python native and Cython with C++20 backend). To install use:
 
 ```bash
 pip install ubpe[native]
 ```
 
+Or,
+
+```bash
+pip install ubpe[cython]
+```
+
+
 ## Contribution
 
-I am pretty sure, that it has not the most optimal native Python implementation, so feel free to propose optimizations and find bugs.
+I am pretty sure, that it has not the most optimal native Python implementation and C++ backend, so feel free to propose optimizations and bug fixes.
 
-It's planned to add Cython implementation and Rust implementation with Python bindings (not to bite Hugging Face, just because).
+It's planned to add Rust implementation with Python bindings (not to bite Hugging Face, just because).
 
 P.S. if you are working at Hugging Face, you can write me and hire me. Please. 
