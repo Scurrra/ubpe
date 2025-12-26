@@ -1,4 +1,4 @@
-__version__ = "0.2.0-rc3"
+__version__ = "0.2.0"
 
 
 try:
@@ -19,8 +19,6 @@ except ImportError:
 else:
     _has_ubpe_native = True
 
-print(f"Has ubpe-cython :: {_has_ubpe_cython}")
-print(f"Has ubpe-native :: {_has_ubpe_native}")
 
 if not _has_ubpe_cython and not _has_ubpe_native:
     raise Exception(
