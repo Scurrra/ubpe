@@ -24,6 +24,9 @@ Or,
 pip install ubpe[cython]
 ```
 
+## Bug reports
+
+If you find a bug that occurs under certain circumstances in some tests, please report it.
 
 ## Contribution
 
