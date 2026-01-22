@@ -3,7 +3,7 @@ name = "ubpe"
 version = "0.2.2"
 description = "UBPE Tokenizer"
 authors = [{ name = "Scurrra (Ilja Baroŭski)", email = "iscurrra@gmail.com" }]
-license = { text = "MIT" }
+license-files = ["LICENSE"]
 readme = "README.md"
 classifiers = [
     "Programming Language :: Python :: 3",
