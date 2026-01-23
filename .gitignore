@@ -129,7 +129,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Formatting
-.clang-format
-.clang-tidy
 .clangd
