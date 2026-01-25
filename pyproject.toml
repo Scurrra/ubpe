@@ -1,6 +1,6 @@
 [project]
 name = "ubpe"
-version = "0.2.2"
+version = "0.2.3"
 description = "UBPE Tokenizer"
 authors = [{ name = "Scurrra (Ilja Baroŭski)", email = "iscurrra@gmail.com" }]
 license-files = ["LICENSE"]
@@ -13,8 +13,8 @@ requires-python = ">=3.12"
 dependencies = []
 
 [project.optional-dependencies]
-native = ["ubpe-native>=0.2.2"]
-cython = ["ubpe-cython>=0.2.2"]
+native = ["ubpe-native>=0.2.3"]
+cython = ["ubpe-cython>=0.2.3"]
 
 [project.urls]
 Repository = "https://github.com/Scurrra/ubpe.git"
