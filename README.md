@@ -9,10 +9,33 @@ The package provides Universal Byte-Pair Encoding tokenizers:
 ## Guides and theory
  - [Description of tokenizer fitting algorithms](https://scurrra.github.io/blog/ubpe-tokenizers-i/)
  - [Description of encoding and decoding algorithms for classic and novel approaches](https://scurrra.github.io/blog/ubpe-tokenizers-ii/)
+ - [Google Colab Demo (with precomputed cells)](https://colab.research.google.com/drive/1QhQZlgggwtWByEWOwLcoWV37UgOA8VCI?usp=sharing)
+
+## Roadmap
+ - [x] Python native implementation
+ - [x] Cython implementation with C++ backend
+   - [ ] Publish standalone C++ library (it is already usable)
+   - [ ] Other types than `uint32_t` as inner token type
+ - [ ] Rust backend with standalone package
+ - [ ] Subdocument tokenization
+   - [ ] RegEx support
+   - [ ] Support for known word tokens in alphabet
+   - [ ] Ignored tokens
+ - [ ] Collaborative training
+   - [ ] Training checkpoints
+   - [ ] Training on large datasets 
+   - [ ] Training on splitted datasets
+ - [ ] Other Features:
+   - [ ] One token -- Many subsequences
+   - [ ] Spelling correction support
+   - [ ] Vocabulary pruning
+ - [ ] Examples:
+   - [x] Demo with visualizaton of pros of the UBPE novel algorithm
+   - [ ] Subdocument tokenization example
   
 ## Installation
 
-I am planning to deliver different implementations for the algorithm, so the package is divided into general import package (this one), and implementations (for now, Python native and Cython with C++20 backend). To install use:
+It is planned to deliver different implementations for the algorithm, so the package is divided into general import package (this one), and implementations (for now, Python native and Cython with C++20 backend). To install use:
 
 ```bash
 pip install ubpe[native]
@@ -30,8 +53,6 @@ If you find a bug that occurs under certain circumstances in some tests, please 
 
 ## Contribution
 
-I am pretty sure, that it has not the most optimal native Python implementation and C++ backend, so feel free to propose optimizations and bug fixes.
-
-It's planned to add Rust implementation with Python bindings (not to bite Hugging Face, just because).
+Bugfixes and optimizations are welcomed!
 
 P.S. if you are working at Hugging Face, you can write me and hire me. Please. 
