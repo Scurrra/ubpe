@@ -1,5 +1,9 @@
 # UBPE Tokenizer
 
+> [![PyPI - Version](https://img.shields.io/pypi/v/ubpe?style=flat)](https://pypi.org/project/ubpe/)
+[![GitHub License](https://img.shields.io/github/license/Scurrra/ubpe?style=flat)](https://github.com/Scurrra/ubpe/tree/master?tab=MIT-1-ov-file)
+
+
 > UBPE -- Universal Byte-Pair Encoding. Universal means that it works not only with strings, but with general sequences too.
 
 The package provides Universal Byte-Pair Encoding tokenizers:
