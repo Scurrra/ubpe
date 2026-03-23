@@ -9,7 +9,8 @@ The package provides Universal Byte-Pair Encoding tokenizers:
 ## Guides and theory
  - [Description of tokenizer fitting algorithms](https://scurrra.github.io/blog/ubpe-tokenizers-i/)
  - [Description of encoding and decoding algorithms for classic and novel approaches](https://scurrra.github.io/blog/ubpe-tokenizers-ii/)
- - [Google Colab Demo (with precomputed cells)](https://colab.research.google.com/drive/1QhQZlgggwtWByEWOwLcoWV37UgOA8VCI?usp=sharing)
+ - [Google Colab Demo for `ubpe v0.2` (with precomputed cells)](https://colab.research.google.com/drive/1QhQZlgggwtWByEWOwLcoWV37UgOA8VCI?usp=sharing)
+ - [Google Colab Demo for `ubpe v0.3` (with precomputed cells)](https://colab.research.google.com/drive/1kp6lQtsI0mLdX54ASkuaiz4SqhOK6TKh?usp=sharing)
 
 ## Roadmap
  - [x] Python native implementation
@@ -17,10 +18,10 @@ The package provides Universal Byte-Pair Encoding tokenizers:
    - [ ] Publish standalone C++ library (it is already usable)
    - [ ] Other types than `uint32_t` as inner token type
  - [ ] Rust backend with standalone package
- - [ ] Subdocument tokenization
-   - [ ] RegEx support
-   - [ ] Support for known word tokens in alphabet
-   - [ ] Ignored tokens
+ - [x] Subdocument tokenization (since v0.3)
+   - [x] RegEx support
+   - [x] Support for known word tokens in alphabet
+   - [x] Ignored tokens
  - [ ] Collaborative training
    - [ ] Training checkpoints
    - [ ] Training on large datasets 
@@ -31,7 +32,7 @@ The package provides Universal Byte-Pair Encoding tokenizers:
    - [ ] Vocabulary pruning
  - [ ] Examples:
    - [x] Demo with visualizaton of pros of the UBPE novel algorithm
-   - [ ] Subdocument tokenization example
+   - [x] Subdocument tokenization example
   
 ## Installation
 
@@ -47,6 +48,15 @@ Or,
 pip install ubpe[cython]
 ```
 
+> [!NOTE]
+> Starting with version 0.3, the C++ backend has become faster while the native one has become slower, so there's no reason to use the native backend except for educational purposes.
+
+> [!NOTE]
+> While Google Colab is supported, interactive logging doesn't work in it due to complications with redirecting stderr to the cell output.
+
+> [!WARNING]
+> Encoding candidates from different backends of the novel tokenizer (`UBPE`) may differ in order, i.e. two encodings with the same length and weight may be returned in different ordered, but are still valid.
+
 ## Bug reports
 
 If you find a bug that occurs under certain circumstances in some tests, please report it.
@@ -55,4 +65,4 @@ If you find a bug that occurs under certain circumstances in some tests, please 
 
 Bugfixes and optimizations are welcomed!
 
-P.S. if you are working at Hugging Face, you can write me and hire me. Please. 
+P.S. if you are working at Hugging Face or OpenAI, you can write me and hire me. Please.
