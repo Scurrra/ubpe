@@ -68,5 +68,3 @@ If you find a bug that occurs under certain circumstances in some tests, please 
 ## Contribution
 
 Bugfixes and optimizations are welcomed!
-
-P.S. if you are working at Hugging Face or OpenAI, you can write me and hire me. Please.
